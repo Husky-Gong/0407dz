@@ -1,5 +1,11 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-</body>
+    <head>
+        <title>
+            $Title$
+        </title>
+        <base href="<%=request.getContextPath()+"/"%>">
+    </head>
+    <body>
+    $END$
+    </body>
 </html>
