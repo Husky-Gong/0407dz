@@ -20,7 +20,7 @@
     from flower_system
   </select>
 
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zx.domain.FlowerSystem" useGeneratedKeys="true">
+  <insert id="insert" parameterType="com.zx.domain.FlowerSystem" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into flower_system (`name`, price, production)
     values (#{name}, #{price}, #{production})

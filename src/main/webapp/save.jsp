@@ -39,10 +39,10 @@
             NAME:<input type="text" name="name" id="name"/>${requestScope.msg}
         </p>
         <p>
-            NAME:<input type="text" name="price" id="price"/>
+            PRICE:<input type="text" name="price" id="price"/>
         </p>
         <p>
-            NAME:<input type="text" name="production" id="production"/>
+            PRODUCTION:<input type="text" name="production" id="production"/>
         </p>
         <p>
             <input type="submit" value="SUBMIT"/>

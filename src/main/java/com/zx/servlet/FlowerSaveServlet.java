@@ -34,7 +34,7 @@ public class FlowerSaveServlet extends HttpServlet {
 
         int save = flowerService.save(record);
 
-        if(save>1){
+        if(save>0){
             resp.sendRedirect(req.getContextPath()+"/zx/flowerServlet");
         }else{
             req.setAttribute("msg", "failed");

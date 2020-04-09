@@ -23,7 +23,7 @@ public class FlowerServlet extends HttpServlet{
     public void init() throws ServletException {
         ApplicationContext app = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
         // 这里为什么要用service而不是用impl？？
-        app.getBean("flowers", FlowerService.class);
+        flowerService = app.getBean("flowers", FlowerService.class);
     }
 
     @Override
