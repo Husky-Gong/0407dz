@@ -9,6 +9,13 @@ public class FlowerSystem {
 
     private String production;
 
+    public FlowerSystem(Integer id, String name, Double price, String production) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.production = production;
+    }
+
     public Integer getId() {
         return id;
     }
