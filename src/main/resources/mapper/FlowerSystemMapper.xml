@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zx.mapper.FlowerSystemMapper">
+  <resultMap id="BaseResultMap" type="com.zx.domain.FlowerSystem">
+    <!--@mbg.generated-->
+    <!--@Table flower_system-->
+    <id column="id" property="id" />
+    <result column="name" property="name" />
+    <result column="price" property="price" />
+    <result column="production" property="production" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, price, production
+  </sql>
+  <select id="selectAll" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <include refid="Base_Column_List" />
+    from flower_system
+  </select>
+
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zx.domain.FlowerSystem" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into flower_system (`name`, price, production)
+    values (#{name}, #{price}, #{production})
+  </insert>
+
+</mapper>
